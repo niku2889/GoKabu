@@ -1,0 +1,8 @@
+C:\Users\nikunj\Documents\Visual Studio 2017\Projects\GoKabutar_App\GoKabutar_App\bin\Debug\netcoreapp1.1\GoKabutar_App.deps.json
+C:\Users\nikunj\Documents\Visual Studio 2017\Projects\GoKabutar_App\GoKabutar_App\bin\Debug\netcoreapp1.1\GoKabutar_App.runtimeconfig.json
+C:\Users\nikunj\Documents\Visual Studio 2017\Projects\GoKabutar_App\GoKabutar_App\bin\Debug\netcoreapp1.1\GoKabutar_App.runtimeconfig.dev.json
+C:\Users\nikunj\Documents\Visual Studio 2017\Projects\GoKabutar_App\GoKabutar_App\bin\Debug\netcoreapp1.1\GoKabutar_App.dll
+C:\Users\nikunj\Documents\Visual Studio 2017\Projects\GoKabutar_App\GoKabutar_App\bin\Debug\netcoreapp1.1\GoKabutar_App.pdb
+C:\Users\nikunj\Documents\Visual Studio 2017\Projects\GoKabutar_App\GoKabutar_App\obj\Debug\netcoreapp1.1\GoKabutar_App.AssemblyInfo.cs
+C:\Users\nikunj\Documents\Visual Studio 2017\Projects\GoKabutar_App\GoKabutar_App\obj\Debug\netcoreapp1.1\GoKabutar_App.dll
+C:\Users\nikunj\Documents\Visual Studio 2017\Projects\GoKabutar_App\GoKabutar_App\obj\Debug\netcoreapp1.1\GoKabutar_App.pdb
