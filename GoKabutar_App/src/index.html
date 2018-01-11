@@ -1,14 +1,81 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>GoKabutar</title>
-  <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+  <title>Go Kabutar</title>
+  <base href="/">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+
+  <link href="assets/css/master.css" rel="stylesheet">
+
+  <!-- SWITCHER -->
+
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/color1.css" title="color1" media="all" data-default-color="true" />
+  <script src="http://maps.google.com/maps/api/js?sensor=false"
+          type="text/javascript"></script>
+
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
 </head>
 <body>
+  <div id="page-preloader"><span class="spinner"></span></div>
   <app-root></app-root>
+  <!--Main-->
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/modernizr.custom.js"></script>
+  <!--Owl Carousel-->
+  <script src="assets/owl-carousel/owl.carousel.min.js"></script>
+  <!--bxSlider-->
+  <script src="assets/bxslider/jquery.bxslider.min.js"></script>
+  <!-- jQuery UI Slider -->
+  <script src="assets/slider/jquery.ui-slider.js"></script>
+  <!--Isotope-->
+  <script src="assets/isotope/isotope.js"></script>
+  <!--Slider-->
+  <script src="assets/slider/jquery.ui-slider.js"></script>
+  <!--Fancybox-->
+  <script src="assets/fancybox/jquery.fancybox.pack.js"></script>
+  <!--Theme-->
+  <script src="assets/js/jquery.smooth-scroll.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.placeholder.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script type="text/javascript">
+    var locations = [
+      ['<strong>Go Kabutar</strong><br>1236-40 Washington Ave<br>Philadelphia, PA 19147<br><a href="http://us.rentalby.com/usa-car-rental/p-i019103/">More about this Depot</a>', 39.937397, -75.163651, 1]
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 13,
+      center: new google.maps.LatLng(39.937397, -75.163651),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function (marker, i) {
+        return function () {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
+
 </body>
 </html>

@@ -1,4 +1,5 @@
-﻿<h1>Application says what?</h1>
-<ul>
-  <li *ngFor="let value of apiValues">{{value}}</li>
-</ul>
+﻿<app-header></app-header>
+<router-outlet>
+  <span class="loading"></span>
+</router-outlet>
+<app-footer></app-footer>

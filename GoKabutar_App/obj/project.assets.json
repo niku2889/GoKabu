@@ -9667,10 +9667,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nikunj\\documents\\visual studio 2017\\Projects\\GoKabutar_App\\GoKabutar_App\\GoKabutar_App.csproj",
+      "projectUniqueName": "C:\\Users\\nikunj\\Documents\\GitHub\\GitKit_Vipul\\GOkabutar\\GoKabutar_App\\GoKabutar_App.csproj",
       "projectName": "GoKabutar_App",
-      "projectPath": "C:\\Users\\nikunj\\documents\\visual studio 2017\\Projects\\GoKabutar_App\\GoKabutar_App\\GoKabutar_App.csproj",
-      "outputPath": "C:\\Users\\nikunj\\documents\\visual studio 2017\\Projects\\GoKabutar_App\\GoKabutar_App\\obj\\",
+      "projectPath": "C:\\Users\\nikunj\\Documents\\GitHub\\GitKit_Vipul\\GOkabutar\\GoKabutar_App\\GoKabutar_App.csproj",
+      "outputPath": "C:\\Users\\nikunj\\Documents\\GitHub\\GitKit_Vipul\\GOkabutar\\GoKabutar_App\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

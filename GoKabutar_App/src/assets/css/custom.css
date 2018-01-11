@@ -1,0 +1,343 @@
+
+@media (min-width:1900px){
+	
+.bx-wrapper img {
+  max-width: 1000%;
+  width: 100%;
+}	
+	
+} /* //min-width:1900px */
+
+.social--top {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.header-contacts {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.btn-driver {
+	background-color: #C49A6C;
+	border-color: #BD8F5C #BD8F5C #BD8F5C;
+	color: #fff;
+	transition:ease 0.5s;
+}
+.btn-driver:hover {
+	background-color: #fff;
+	border-color: #BD8F5C #BD8F5C #BD8F5C;
+	color: #C49A6C;
+	transition:ease 0.5s;
+}
+.top-nav {
+  background-color: #232323;
+}
+.top-nav__main {
+  background-color: #232323;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.logo__moto {
+  transform: none;
+}
+.top-header__main.wow.slideInDown {
+  border-bottom: none;
+}
+.main-nav li a {
+  color: #fff;
+  font-size: 15px;
+}
+.main-nav li a:hover {
+  color: #C49A6C;
+}
+.logo__moto > img {
+  height: 60px;
+}
+.logo {
+  margin-top: -5px;
+}
+.main-nav.navbar-main-slide {
+  padding-top: 12px;
+}
+.sliders__text > h2 {
+  color: #c49a6c;
+}
+.anons__img--bike {
+  padding-top: 35px;
+}
+#enterprise .title.title--main {
+  color: #fff;
+}
+#enterprise .line__first {
+  background-color: #fff;
+}
+#enterprise p {
+  color: #fff;
+}
+#enterprise {
+	color: #fff;
+	background-image: url(../images/delivery.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.map {
+  height: 400px;
+}
+.sign-in {
+  display: none;
+  opacity: 0;
+  transition:ease 0.5s;
+}
+.sign-up {
+  display: none;
+  opacity: 0;
+  transition:ease 0.5s;
+}
+.square.signintop {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: auto;
+}
+.square.signuptop {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: auto;
+}
+.square.signintop:hover, .square.signuptop:hover {
+  color:#fff;
+  text-decoration:none;
+}
+.sign-in.visible-sign {
+  background-color: rgba(2,2,2,0.80);
+  display: block;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  transition:ease 0.5s;
+}
+.signin-form {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  max-width: 100%;
+  width: 400px;
+}
+.signin-form .title {
+  color: #fff;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+.signin-form .quick-input > input {
+  background-color: #fff;
+  font-size: 100%;
+  height: 40px;
+  padding-left: 15px;
+}
+.form-close > span {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  font-size: 24px;
+}
+/**/
+.sign-up.visible-sign {
+  background-color: rgba(2,2,2,0.80);
+  display: block;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  transition:ease 0.5s;
+  overflow-y: scroll;
+}
+.signup-form {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 100%;
+}
+.signup-form .title {
+  color: #fff;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+.signup-form .quick-input > input {
+  background-color: #fff;
+  font-size: 100%;
+  height: 40px;
+  padding-left: 15px;
+}
+nav.shrink {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition:ease 0.5s;
+}
+.shrink .logo__moto > img {
+  height: 40px;
+  transition:ease 0.5s;
+}
+.shrink .main-nav li a {
+  font-size: 14px;
+  transition:ease 0.5s;
+}
+.shrink .main-nav.navbar-main-slide {
+  padding-top: 0;
+  transition:ease 0.5s;
+}
+.already {
+  float: left;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+.already > a {
+  background-color: #09091a;
+  color: #fff;
+  display: block;
+  line-height: 38px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 7px;
+  text-decoration: none !important;
+}
+.already > a:hover {
+  color: #C49A6C;
+}
+.already h3 {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.signup-section {
+	background-image: url(../images/backgrounds/signup.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+.sign-up-form {
+  background-color: #f1f1f1;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  margin-bottom:-30px;
+  width:100%;
+  max-width:300px;
+  float:right;
+}
+.sign-up-form .signup-form {
+  color: #000;
+}
+.sign-up-form .signup-form .title {
+  color: #000;
+}
+.sign-partners > h1 {
+  font-size: 46px;
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+.sign-partners > p {
+  font-size: 18px;
+  padding-top: 50px;
+}
+.signup-icon {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 38px;
+  margin-right: 10px;
+}
+.signup-form .btn {
+  width: 100%;
+}
+.bottomform {
+  color: #9d9da3;
+  font-size: 12px;
+  padding-top: 20px;
+  text-align: center;
+}
+.anons.anons--about {
+  padding-top: 80px;
+}
+
+
+
+
+
+
+
+@media (max-width:767px){
+
+* {box-sizing:border-box;max-width:100% !important;}
+table {table-layout:fixed; width:100%;}
+img { max-width:100% !important; height:auto;}
+body {margin: 0px;padding: 0px;}
+iframe { max-width:100% !important;}
+object { max-width:100% !important;}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+}		
+.header-contacts > .header-contacts__one:nth-child(1) {
+  float: left;
+  margin-left: auto;
+  margin-right:auto;
+}
+.header-contacts > .header-contacts__one:nth-child(2) {
+  float: right;
+  margin-left: auto;
+  margin-right:auto;
+}
+div.signin-form {
+  max-width: 85% !important;
+}
+div.signup-form {
+  max-height: 90vh;
+  max-width: 85% !important;
+  overflow-y: scroll;
+}
+.top-nav__main > .row > div {
+  /*width: auto;*/
+}
+.top-nav__main > .row > div:nth-child(2) {
+  float: right;
+}
+.logo__moto > img {
+  height: 45px;
+}
+.main-nav > .btn_header_search {
+  display: inline-block;
+  float: right;
+}
+.navbar-header {
+  float: left;
+}
+.main-nav ul {
+  float: left;
+  height: auto;
+  width: 100%;
+}
+.main-nav.navbar-main-slide {
+  margin-top: 0;
+}
+a.logo {
+  margin-bottom: 5px;
+}
+
+
+
+	
+} /* //max-width:767px */
