@@ -1,16 +1,31 @@
 ﻿<div class="sign-in">
   <div class="signin-form">
-    <div class="form-close"><span>X</span></div>
-    <form action="#" method="post" class="form">
-      <h2 class="title"><span class="title__bold">Sign In</span></h2>
-      <div class="form-group">
-        <input class="form-control" name="username" type="text" required placeholder="Username*" />
+    <div class="form-close">
+      <span>X</span>
+    </div>
+    <form name="loginform" (ngSubmit)="lf.form.valid && login()" #lf="ngForm" novalidate>
+      <h2 class="title">
+        <span class="title__bold">Sign In</span>
+      </h2>
+      <!-- Begin # Login Form -->
+      <div *ngIf="successMsg" class="help-block alert alert-success">{{successMsg}}</div>
+      <div *ngIf="errorMsg" class="help-block alert alert-danger">{{errorMsg}}</div>
+      <div class="form-group" [ngClass]="{ 'has-error': lf.submitted && !loginEmail.valid }">
+        <label for="username">User Name</label>
+        <input type="text" class="form-control" name="loginEmail" placeholder="Username" [(ngModel)]="model.loginEmail" #loginEmail="ngModel"
+          required />
+        <div *ngIf="lf.submitted && !loginEmail.valid" class="help-block alert alert-danger">Email Id is required or Invalid</div>
       </div>
-      <div class="form-group">
-        <input class="form-control" name="password" type="password" required placeholder="Password*" />
+      <div class="form-group" [ngClass]="{ 'has-error': lf.submitted && !password.valid }">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+        <div *ngIf="lf.submitted && !password.valid" class="help-block alert alert-danger">Password is required</div>
       </div>
-
-      <button type="submit" class="btn button button--red button--main">SIGN IN</button>
+      <div class="form-group text-center">
+        <button [disabled]="loading" class="btn btn-primary btn-block">SIGN IN</button>
+        <img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="
+        />
+      </div>
     </form>
   </div>
 </div>

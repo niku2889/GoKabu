@@ -27,8 +27,7 @@ export class LoginComponent implements OnInit {
         this.loading = true;
         this.cService.loginUser(this.model.loginEmail, this.model.password)
             .subscribe((response) => {
-                this.successMsg = response;
-                $("#login-modal").modal('hide');
+                this.successMsg = "Successfully Logged In";
                 this.loading = false;
                 setTimeout(function () {
                     this.successMsg = '';
@@ -36,7 +35,7 @@ export class LoginComponent implements OnInit {
             },
             (error) => {
                 this.loading = false;
-                this.errorMsg = error._body;
+                this.errorMsg = "Invalid username and password";
                 setTimeout(function () {
                     this.errorMsg = '';
                 }.bind(this), 5000);

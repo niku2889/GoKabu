@@ -7,7 +7,7 @@ import { User } from '../models/user';
 
 @Injectable()
 export class CommonService {
-    API_ENDPOINT: string = "http://70.35.198.86/GTIKITappLayer/";
+    API_ENDPOINT: string = "http://70.35.198.86/GokData/";
     constructor(private http: Http) { }
 
     createUser(user: User) {  
@@ -15,19 +15,22 @@ export class CommonService {
             "firstname": user.firstName,
             "lastname": user.lastName,
             "email": user.email,
-            "password": user.password
+            "password": user.password,
+            "phone": user.phone,
+            "city": user.city,
+            "inviteCode":user.inviteCode
         });
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
         //headers.append('Access-Control-Allow-Origin', '*');
         let options = new RequestOptions({ headers: headers });
 
-        return this.http.post(this.API_ENDPOINT + 'GTIKIT/GTCustomer', body, options)
+        return this.http.post(this.API_ENDPOINT + 'Provider?Id=1', body, options)
             .map((response: Response) => response.json());
     }
 
     loginUser(email:any,pssword:any) {
-        let baseurl = this.API_ENDPOINT + 'GTCustomer/validate?';
+        let baseurl = this.API_ENDPOINT + 'Provider/Login?';
         let param1 = 'UserName=';
         let param2 = '&Password=';
 
